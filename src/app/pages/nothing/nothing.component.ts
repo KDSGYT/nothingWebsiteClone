@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {data as items} from '../../../assets/largeScreen/images'
 @Component({
   selector: 'app-nothing',
   templateUrl: './nothing.component.html',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NothingComponent implements OnInit {
 
-  constructor() { }
+  public items = [...items];
+
+  constructor() {
+   }
 
   ngOnInit(): void {
   }
 
 }
+
+
+// parent component   
