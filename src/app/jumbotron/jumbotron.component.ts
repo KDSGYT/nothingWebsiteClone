@@ -8,6 +8,14 @@ import { Component, Input, OnInit } from '@angular/core';
 export class JumbotronComponent implements OnInit {
 
   @Input() imageLink = '';
+  @Input() preheading = '';
+  @Input() heading = '';
+  @Input() shortText='';
+  @Input() link1 = {
+    linkName:'',
+    link:''
+  };
+  @Input() learnMore = '';
   constructor() { }
 
   ngOnInit(): void {
