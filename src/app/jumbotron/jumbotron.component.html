@@ -1,6 +1,7 @@
 <div class="content-container">
-    <img [src]="imageLink" />
-    <aside>
+    <img [src]="imageLink" class="image"/>
+    <div class="overlay-text">{{overlayText}}</div>
+    <div class="aside">
         <div class="preheading">{{preheading}}</div>
         <h2 class="heading">{{heading}}</h2>
         <p class="short-text">{{shortText}}</p>
@@ -8,5 +9,5 @@
             <a href="" *ngIf="link1.link.length > 1" class="link-1"></a>
             <a [href]="learnMore" class="learn-more">Learn More</a>
         </div>
-    </aside>
+    </div>
 </div>

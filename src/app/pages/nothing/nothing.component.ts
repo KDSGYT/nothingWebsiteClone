@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {data as items} from '../../../assets/largeScreen/images'
+import { LandingPagedataService, LandingPagedataServiceType } from 'src/app/services/landing-pagedata/landing-pagedata.service';
+
 @Component({
   selector: 'app-nothing',
   templateUrl: './nothing.component.html',
@@ -7,12 +8,15 @@ import {data as items} from '../../../assets/largeScreen/images'
 })
 export class NothingComponent implements OnInit {
 
-  public items = [...items];
+  public items: Array<LandingPagedataServiceType>;
 
-  constructor() {
-   }
+
+  constructor(private DataService: LandingPagedataService) {
+    this.items = this.DataService.getLandingPageData();
+  }
 
   ngOnInit(): void {
+    // 
   }
 
 }

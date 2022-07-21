@@ -1,24 +1,27 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-jumbotron',
   templateUrl: './jumbotron.component.html',
   styleUrls: ['./jumbotron.component.scss']
 })
-export class JumbotronComponent implements OnInit {
+export class JumbotronComponent implements OnChanges {
 
   @Input() imageLink = '';
   @Input() preheading = '';
   @Input() heading = '';
-  @Input() shortText='';
+  @Input() shortText = '';
   @Input() link1 = {
-    linkName:'',
-    link:''
+    linkName: '',
+    link: ''
   };
+  @Input() overlayText = '';
   @Input() learnMore = '';
-  constructor() { }
+  constructor() {
+  }
 
-  ngOnInit(): void {
+  ngOnChanges(): void {
+    console.log(this.preheading)
   }
 
 }
