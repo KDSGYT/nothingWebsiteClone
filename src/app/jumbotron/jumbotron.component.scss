@@ -5,6 +5,8 @@
     height: 100vh;
     width: 100%;
     position: relative;
+    font-family: 'NType-Regular';
+
     // .left {
 
 
@@ -28,7 +30,7 @@
         height: auto;
         left: 0;
         overflow: hidden;
-        width: 77%;
+        width: 76.5%;
         display: block;
         object-fit: cover;
     }
@@ -36,9 +38,41 @@
     // }
 
     .right {
+        border: 2px solid black;
+        min-height: 15.5em;
         position: absolute;
-        width: 23%;
+        width: 23.5%;
         bottom: 0;
         right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 1em;
+
+        .preheading span {
+            margin-right: 2em;
+            font-family: 'NType-Mono';
+            
+        }
+        h1{
+            font-size: 3.8em;
+            font-weight: 200;
+            font-family: 'NType-Regular';
+        }
+        p.short-text{
+            font-size: 1em;
+            font-family: 'NType-Mono';
+            margin-top: min(3%);
+            margin-bottom: min(4%);
+        }
+        .links{
+            display: flex;
+            justify-content: space-between;
+            a{
+                color: rgb(36, 78, 170);
+                text-decoration: none;
+                font-family: 'NType-Regular';
+            }
+        }
     }
 }
