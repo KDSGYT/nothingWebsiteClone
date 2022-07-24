@@ -1,13 +1,12 @@
 <div class="content-container">
-    <!-- <div class="left"> -->
     <img [src]="imageLink" class="image" />
     <p class="overlay-text">{{overlayText}}</p>
-    <!-- <div class="overlay-container"> -->
-    <!-- </div> -->
-    <!-- </div> -->
     <div class="right">
-        <!-- <p class="preheading">{{splitPreheading(preheading)}}</p> -->
-        <p class="preheading" ><span *ngFor="let word of splitPreheading(preheading)">{{word}}</span></p>
+        <p class="preheading">
+            <span *ngFor="let word of splitPreheading(preheading)">
+                {{word}}
+            </span>
+        </p>
         <h1 class="heading">{{heading}}</h1>
         <p class="short-text">{{shortText}}</p>
         <div class="links">
