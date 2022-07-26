@@ -3,20 +3,26 @@
         <a routerLink="/">Nothing(R)</a>
     </li>
     <li id="drop-down-menu">
-        <span id="products">Products <img src="../../assets/svg/arrow.svg"/></span>
+        <span id="products">Products <img src="../../assets/svg/arrow.svg" alt="arrow head menu" /></span>
         <div id="hidden">
-            <h3>All Products</h3>
-            <ul>
-                <li>Phone (1)</li>
-                <li>Ear (1)</li>
-            </ul>
-            <h3>All Accessories</h3>
-            <ul>
-                <li>Power (45w)</li>
-            </ul>
+            <div id="preview-container">
+                <img [src]='previewFile' alt="Product Preview." />
+            </div>
+            <div id="submenu">
+                <li>All Products</li>
+                <ul>
+                    <li (mouseleave)="change('Header')" (mouseover)="change('phone1')">phone (1)</li>
+                    <li (mouseleave)="change('Header')" (mouseover)="change('ear1')">ear (1)</li>
+                </ul>
+                <br/>
+                <li>All Accessories</li>
+                <ul>
+                    <li (mouseleave)="change('Header')" (mouseover)="change('EU')">power (45w)</li>
+                </ul>
+            </div>
         </div>
     </li>
-    <li >
+    <li>
         <a routerLink="/store">Store</a>
     </li>
     <li class="white-background">

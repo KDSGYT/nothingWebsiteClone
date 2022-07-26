@@ -12,6 +12,7 @@
     width: 100%;
     padding-left: 20%;
     font-size: 1em;
+    transition: background-color 0.3s ease;
     // border: 2px solid black;
 
     * {
@@ -48,21 +49,43 @@
         #products {
             padding: 10px;
 
-            svg {}
+            img {
+                transition: transform 0.3s ease;
+            }
         }
 
         #hidden {
-            top: -15em;
+            top: -30em;
             left: 0;
             margin: 0;
             z-index: -9;
             position: absolute;
             transition: top 1s ease;
-            // border:2px solid black;
             background-color: black;
             width: inherit;
             padding: 1em;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 28em;
 
+            #preview-container {
+                height: 100%;
+                padding: 0;
+                img {
+                    height: 100%;
+
+                }
+            }
+
+            #submenu {
+                padding: 0;
+                margin-right: 56%;
+
+                li {
+                    padding: 0.1em;
+                }
+            }
         }
 
 
@@ -74,5 +97,12 @@
         top: 3em;
         color: black;
 
+    }
+
+    #drop-down-menu:hover #products {
+        img {
+
+            transform: rotate(180deg);
+        }
     }
 }
