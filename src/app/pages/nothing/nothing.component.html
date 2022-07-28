@@ -1,0 +1,15 @@
+<div id="landing-page" class="">
+    <div *ngFor="let item of items">
+        <app-jumbotron 
+        [id]="item.id"    
+        [imageLink]="item.imageLink"
+        [preheading]="item.preHeading"
+        [heading]="item.heading"
+        [shortText]="item.shortText"
+        [link1]="item.link1"
+        [overlayText]="item.overlayText"
+        [learnMore]="item.learnMore"
+            ></app-jumbotron>
+    </div>
+
+</div>

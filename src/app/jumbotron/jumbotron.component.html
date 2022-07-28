@@ -1,0 +1,36 @@
+<div class="content-container">
+    <img [src]="imageLink" class="image" />
+    <!-- change the color of overlay text to black when the there is specific jumbotron being created -->
+    <p class="overlay-text" [ngStyle]="{'color': id === 3 ? 'black':''} ">{{overlayText}}</p>
+    
+    <!-- content to the right of the image -->
+    <div class="right">
+        <p class="preheading">
+            <span *ngFor="let word of splitPreheading(preheading)">
+                {{word}}
+            </span>
+        </p>
+        <h1 class="heading">{{heading}}</h1>
+        <p class="short-text">{{shortText}}</p>
+        <div class="links">
+            <a [href]="link1.link" *ngIf="link1.link.length > 1" class="link-1">{{link1.linkName}}</a>
+            <a [href]="learnMore" class="learn-more">( Learn More )</a>
+        </div>
+    </div>
+</div>
+
+<!-- content to be displayed after the first component -->
+<div *ngIf="id===1" id="after-jumbo-container">
+    <div class="item-container">
+        <img src="../../assets/landingPageAssets/Group.webp" />
+        <p>“a radical reinterpretation of mobile tech”</p>
+    </div>
+    <div class="item-container">
+        <img src="../../assets/landingPageAssets/Vector_1_4967f570-a82d-4ebb-9ec1-7cea3a1720ae.webp" />
+        <p>“Nothing Phone (1) is the biggest launch of the year in the smartphone space”</p>
+    </div>
+    <div class="item-container">
+        <img src="../../assets/landingPageAssets/ac55312f-5caf-4b41-b802-2d75a39861d0.webp" />
+        <p>“The most hyped tech company in years”</p>
+    </div>
+</div>

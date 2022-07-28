@@ -1,0 +1,81 @@
+footer {
+    background-color: #DCD7D2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    li {
+        width: fit-content;
+    }
+
+    li:hover {
+        &::before {
+            content: ">  ";
+        }
+    }
+
+    #upper-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        ul {
+            margin: 1em;
+            list-style-type: none;
+            width: 20%;
+
+            h3 {
+                font-weight: 200;
+                font-family: "Ndot";
+                margin-bottom: 1em;
+
+            }
+
+            li {
+                font-family: "Ndot";
+
+                #email-field {
+                    border: none;
+                    background: none;
+                    outline: none;
+                }
+            }
+
+            &:last-child {
+                li {
+                    margin: 1em;
+                }
+            }
+        }
+
+        // Special style to not show any hover styles.
+        #join-list {
+            li:hover {
+                &::before {
+                    content: '';
+                }
+            }
+        }
+    }
+
+    #lower-container {
+        width: 100%;
+        word-spacing: 5px;
+
+        ul {
+            margin: 0.5em;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                margin-right: 1em;
+            }
+
+        }
+    }
+}
+
+//NOTE: Need to add space to the right side of the jumbotrons on bottom below learn more.

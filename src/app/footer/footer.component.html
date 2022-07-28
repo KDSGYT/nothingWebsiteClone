@@ -1,0 +1,58 @@
+<footer>
+    <div id="upper-container">
+        <ul id="products">
+            <h3>PRODUCTS</h3>
+            <li>phone(1)</li>
+            <li>ear(1)</li>
+            <li>accessories</li>
+        </ul>
+        <ul id="company">
+            <h3>COMPANY</h3>
+            <li>ABOUT US</li>
+            <li>CAREERS</li>
+            <li>COMMUNITY</li>
+            <li>NEWSROOM</li>
+        </ul>
+        <ul id="support">
+            <h3>SUPPORT</h3>
+            <li>SUPPORT CENTRE</li>
+            <li>CONTACT US</li>
+        </ul>
+        <ul id="social">
+            <h3>SOCIAL</h3>
+            <li>INSTAGRAM</li>
+            <li>YOUTUBE</li>
+            <li>TWITTER</li>
+            <li>TIKTOK</li>
+            <li>DISCORD</li>
+        </ul>
+        <ul id="join-list">
+            <h3>JOIN OUR MAILING LIST</h3>
+            <li>[<input type="text" id="email-field" placeholder="EMAIL ADDRESSES" /> <span>JOIN</span> ]</li>
+            <!-- Read policy and terms. -->
+            <li (click)="readPolicy()">
+                [ <span *ngIf="ReadPrivacyPolicy">x</span> <span *ngIf="!ReadPrivacyPolicy">&nbsp;&nbsp;&nbsp;</span>]
+                YOU HAVE READ AND AGREE TO THE TERMS IN OUR
+                <a style="color:black" href="">PRIVACY POLICY</a>
+            </li>
+
+            <li (click)="consentForMarketing()">
+                [ <span *ngIf="ReceiveNothingMarketing">x</span> <span
+                    *ngIf="!ReceiveNothingMarketing">&nbsp;&nbsp;&nbsp;</span>]
+                YOU CONSENT TO RECEIVEING NOTHING MARKETING COMMUNICATIONS.
+            </li>
+        </ul>
+    </div>
+    <div id="lower-container">
+        <ul>
+            <ul>
+                <li>PRIVACY POLICY</li>
+                <li>TERMS OF SALE</li>
+                <li>ACCEPTABLE USE POLICY</li>
+                <li>USER AGREEMENT</li>
+            </ul>
+            <li>ALL MAJOR CREDIT CARDS AND CRYPTO ACCEPTED</li> 
+            <li>CANADA/CAD</li>
+        </ul>
+    </div>
+</footer>

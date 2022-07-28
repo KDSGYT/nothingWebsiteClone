@@ -1,0 +1,34 @@
+<nav class="navbar">
+    <li>
+        <a routerLink="/">NOTHING (R)</a>
+    </li>
+    <li id="drop-down-menu">
+        <span id="products">PRODUCTS <img src="../../assets/svg/arrow.svg" alt="arrow head menu" /></span>
+        <div id="hidden">
+            <div id="preview-container">
+                <img [src]='previewFile' alt="Product Preview." />
+            </div>
+            <div id="submenu">
+                <li>All Products</li>
+                <ul>
+                    <li (mouseleave)="change('Header')" (mouseover)="change('phone1')">phone (1)</li>
+                    <li (mouseleave)="change('Header')" (mouseover)="change('ear1')">ear (1)</li>
+                </ul>
+                <br/>
+                <li>All Accessories</li>
+                <ul>
+                    <li (mouseleave)="change('Header')" (mouseover)="change('EU')">power (45w)</li>
+                </ul>
+            </div>
+        </div>
+    </li>
+    <li>
+        <a routerLink="/store">STORE</a>
+    </li>
+    <li class="white-background">
+        <a routerLink="/login">LOGIN</a>
+    </li>
+    <li class="white-background">
+        <a routerLink="/store">CART</a>
+    </li>
+</nav>
