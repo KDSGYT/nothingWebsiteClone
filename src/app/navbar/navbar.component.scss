@@ -8,7 +8,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 9;
+    z-index: 99;
     width: 100%;
     padding-left: 20%;
     font-size: 1em;
@@ -90,8 +90,6 @@
 
 
     }
-
-
     #drop-down-menu:hover #hidden {
         // display: block;
         top: 3em;
