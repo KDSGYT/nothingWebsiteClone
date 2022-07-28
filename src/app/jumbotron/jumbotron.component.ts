@@ -7,6 +7,7 @@ import { Component, Input, OnChanges, OnInit } from '@angular/core';
 })
 export class JumbotronComponent implements OnChanges {
 
+  @Input() id=0;
   @Input() imageLink = '';
   @Input() preheading = '';
   @Input() heading = '';
@@ -36,7 +37,7 @@ export class JumbotronComponent implements OnChanges {
   }
 
   ngOnChanges(): void {
-    console.log(this.preheading)
+    // console.log(this.preheading)
   }
 
 }

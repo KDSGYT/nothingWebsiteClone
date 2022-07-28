@@ -9,7 +9,7 @@ export class LandingPagedataService {
   // need to make it subscribable.
   constructor() { }
 
-  getLandingPageData():Array<LandingPagedataServiceType> {
+  getLandingPageData(): Array<LandingPagedataServiceType> {
     return [
       {
         id: 1,
@@ -40,9 +40,21 @@ export class LandingPagedataService {
       {
         id: 3,
         imageLink: `../../assets/landingPageAssets/3.png`,
+        preHeading: 'Nothing. Support.',
+        heading: 'Our new support services.',
+        shortText: 'We’ve completely redesigned our support services. More agents, new ways to contact us, device repairs and a brand new support portal. \nTo fully take care of our Phone (1) experience',
+        link1: {
+          linkName: '',
+          link: ''
+        },
+        overlayText: 'support',
+        learnMore: ''
+      }, {
+        id: 4,
+        imageLink: `../../assets/landingPageAssets/4.png`,
         preHeading: 'Introducing. Ear (1).',
         heading: 'Sound of change.',
-        shortText: 'Raw beauty with precise engineering and state-of-the-art noise cancellation for a pure sound experience.       ',
+        shortText: 'Raw beauty with precise engineering and state-of-the-art noise cancellation for a pure sound experience.',
         link1: {
           linkName: '',
           link: ''
@@ -50,8 +62,8 @@ export class LandingPagedataService {
         overlayText: 'ear (1)',
         learnMore: ''
       }, {
-        id:4,
-        imageLink: `../../assets/landingPageAssets/4.png`,
+        id: 5,
+        imageLink: `../../assets/landingPageAssets/5.png`,
         preHeading: 'About. Nothing.',
         heading: 'About us.',
         shortText: 'It’s easy to make something. Even easier when it’s just like the thing before it. And the one before that. But like all good things, this one starts from scratch. No notes. No blueprints. No map to find our way back.',
@@ -61,9 +73,9 @@ export class LandingPagedataService {
         },
         overlayText: 'About us.',
         learnMore: ''
-      },{
-        id:5,
-        imageLink: `../../assets/landingPageAssets/5.png`,
+      }, {
+        id: 6,
+        imageLink: `../../assets/landingPageAssets/6.png`,
         preHeading: 'Find. Phone (1).',
         heading: 'Where to buy Phone (1)',
         shortText: 'The wait is so nearly over.16 July. The first chance to get your hands on Phone (1). Here’s everything you need to know.',
@@ -81,7 +93,7 @@ export class LandingPagedataService {
 
 
 export interface LandingPagedataServiceType {
-  id:number,
+  id: number,
   imageLink: string,
   preHeading: string,
   heading: string,
