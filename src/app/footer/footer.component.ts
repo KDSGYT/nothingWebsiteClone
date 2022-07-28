@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  public ReadPrivacyPolicy:boolean = false
+  public ReceiveNothingMarketing:boolean = false
   constructor() { }
 
+  readPolicy():void {this.ReadPrivacyPolicy = !this.ReadPrivacyPolicy}
+  consentForMarketing():void {this.ReceiveNothingMarketing = !this.ReceiveNothingMarketing}
+  
   ngOnInit(): void {
+    // this.ReadPrivacyPolicy = true;
   }
 
 }
